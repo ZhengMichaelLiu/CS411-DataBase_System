@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head itemscope itemtype="http://schema.org/WebSite">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>BigORental</title>
+    <link rel="stylesheet" href="../css/zliu93.css">
+</head>
+
+<body>
+    <h1>Campus Rental of UIUC</h1>
+
+    <p class="email">Please Contact Us: <a href="mailto:BigORental%40illinois.edu">BigORental@illinois.edu</a><p>
+    <img src="img/map.jpeg" width="480" height="640" alt="can not load image" style="float:right"/>
+    
+    <div id="search_table">
+    <h2>Start to search your desired apartments here!</h2>
+    <h3>There is always the ONE for you!</h3>
+        <form method="get" action="php/search.php">
+            <p>Where do you want to live?</p>
+            Area:   <select name = "area">
+                        <option  value= 1 >1</option>
+                        <option  value= 2 >2</option>
+                        <option  value= 3 >3</option>
+                        <option  value= 4 >4</option>
+                        <option  value= 5 >5</option>
+                        <option  value= 6 >6</option>
+                        <option  value= 8 >Out of campus</option>
+                    </select>
+                    
+                    <br><br>
+                    
+            No. Bedroom:<select name = "bed">
+                        <option  value= 1>1</option>
+                        <option  value= 2>2</option>
+                        <option  value= 3>3</option>
+                        <option  value= 4>4</option>
+                        <option  value= 5>5</option>
+                        <option  value= 6>6</option>
+                    </select>
+                    <br><br>
+                    
+            No. Bathroom:<select name = "bath">
+                        <option  value= 1 >1</option>
+                        <option  value= 2 >2</option>
+                        <option  value= 3 >3</option>
+                        <option  value= 4 >4</option>
+                        <option  value= 5 >5</option>
+                        <option  value= 6 >6</option>
+                    </select>
+                    <br><br>
+            
+            <p>Do you care about the utility fees included?</p>  
+            Water included?
+                    <input type="radio" name="water" value="No">Not Included
+                    <input type="radio" name="water" value="Yes">Included
+                    <input type = "radio" name = "water" value = "both" checked> No Care
+                    <br><br>
+                    
+            Electricity included?
+                    <input type="radio" name="electricity" value="No">Not Included
+                    <input type="radio" name="electricity" value="Yes">Included
+                    <input type = "radio" name = "electricity" value = "both" checked> No Care
+                    <br><br>
+                    
+            Internet included?
+                    <input type="radio" name="internet" value="No">Not Included
+                    <input type="radio" name="internet" value="Yes">Included
+                    <input type = "radio" name = "internet" value = "both" checked> No Care
+                    <br><br>
+            
+            <p>Do you want to live in Companies' Properties or Private Properties?<p>
+            Apartment/Private Apartment:   
+                    <input type="radio" name="private" value=0>Apartmnet
+                    <input type="radio" name="private" value=1>Private Apartment
+                    <input type = "radio" name = "private" value = 3 checked> No Care
+                    <br><br>
+                    
+            <input type = "submit" name = "Search" value = "Search">
+        </form>
+    </div>    
+    <br><br>
+    
+    <div id="schedule">
+    <h2>My Schedule</h2>
+    <h3>To check your requested apartments</h3>
+    <form method="get" action="php/myschedule.php">
+        <input type="submit" name="show" value="Show">
+    </form>
+    </div>
+    
+    <br><br>
+
+    <div id="recommendation">
+    <h2>Want to see more houses? Check the recommendation for you!</h2>
+    <form method="get" action="php/myrecommendation.php">
+        <input type="submit" name="show" value="Show">
+    </form>
+    </div>
+    
+    <br><br>
+     
+    <div id="logoff">
+    <h2>Log Off</h2>
+    <form method="get" action="index.html">
+        <input type="submit" name="show" value="Log Off">
+    </form>
+    </div>
+</body>
+
+</html>
